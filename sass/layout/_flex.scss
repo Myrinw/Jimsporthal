@@ -1,0 +1,15 @@
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: $row-width;
+    margin: 0 auto;
+
+}
+
+.col-1-of-2{
+    width: 50%;
+    padding-right: 2rem ;
+}
+.col-2-of-2{
+    width: 50%;
+}
