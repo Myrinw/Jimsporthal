@@ -215,13 +215,13 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--1 {
-      background-image: linear-gradient(#5a5a5a, #0652DD), url(../../img/cardio.jpg); }
+      background-image: linear-gradient(#5a5a5a, #0652DD), url(../img/cardio.jpg); }
     .card__picture--2 {
-      background-image: linear-gradient(#5a5a5a, #009432), url(../../img/cardio.jpg);
+      background-image: linear-gradient(#5a5a5a, #009432), url(../img/cardio.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
     .card__picture--3 {
-      background-image: linear-gradient(#5a5a5a, #EA2027), url(../../img/cardio.jpg);
+      background-image: linear-gradient(#5a5a5a, #EA2027), url(../img/cardio.jpg);
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
   .card__heading {
@@ -678,7 +678,7 @@ body {
 .features {
   margin-top: -8rem;
   padding: 20rem 0;
-  background-image: linear-gradient(rgba(46, 46, 46, 0.7), rgba(6, 82, 221, 0.7)), url(../../img/jump.jpg);
+  background-image: linear-gradient(rgba(46, 46, 46, 0.7), rgba(6, 82, 221, 0.7)), url(../img/jump.jpg);
   background-size: cover;
   transform: skewY(-7deg); }
   .features > * {
@@ -701,16 +701,16 @@ body {
 
 .book {
   border-radius: 3px;
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../../img/running.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/running.jpg);
   background-size: 100%;
   width: 100%;
   background-position: center; }
   @media (max-width: 75em) {
     .book {
-      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(../../img/running.jpg); } }
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 70%, transparent 70%), url(../img/running.jpg); } }
   @media (max-width: 56.5em) {
     .book {
-      background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 1000%), url(../../img/running.jpg);
+      background-image: linear-gradient(rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 1000%), url(../img/running.jpg);
       background-size: cover; } }
   .book__form {
     width: 80%;
