@@ -3,9 +3,13 @@
     background-image:  linear-gradient(rgba(46, 46, 46, 0.7), rgba($color-red-dark, 0.7)), url(../../img/gym.jpg);
     background-size: cover;
     background-position: top;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
     position: relative; 
+    @include respond(phone){
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    }
 
     &__textbox{
         position: absolute;
@@ -13,5 +17,8 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        @include respond(tab-port){
+            top: 45%;
+        }
     }
 }

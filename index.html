@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/a0fc79c83b.js" crossorigin="anonymous"></script>
     <title>Jim's sporthal</title>
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#hero" class="navigation__link"><span>01</span>Over jim's sporthal</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>Voordelen</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Lidmaatschap</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Contact</a></li>
+
+                </ul>
+        </nav>
+    </div>
     <section class="hero">
         
      <div class="hero__textbox">
@@ -23,19 +42,23 @@
 
     <section class="section-about">
         <div class="u-center-text">
-            <h2 class="heading-secondary u-margin-bottom-big">Jim's sporthal is een plek voor verbetering</h2>
+            <h2 class="heading-secondary u-margin-bottom-big">Een plek voor verbetering</h2>
         </div>
             <div class="row">
                 <div class="col-1-of-2">
-                    <h3 class="heading-tertiary u-margin-bottom-small">random title</h3>
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel aliquam, illum necessitatibus laudantium eos, vero nisi maiores est accusamus aspernatur quibusdam eaque ut dicta quo. Ea suscipit officiis eos!</p>
+                    <h3 class="heading-tertiary u-margin-bottom-small">Jong en Oud</h3>
+                    <p class="paragraph">Wij bieden een prettige omgeving voor jong en oud tegen een aantrekkelijk tarief. Met persoonlijke èn digitale trainingsbegeleiding zodat wij je kunnen helpen jouw doelen te bereiken op weg naar een gezonder en fitter leven.</p>
                     
-                    <h3 class="heading-tertiary u-margin-bottom-small">random title</h3>
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique vel aliquam, illum necessitatibus laudantium eos, vero nisi maiores est accusamus aspernatur quibusdam eaque ut dicta quo. Ea suscipit officiis eos!</p>
-
+                    <h3 class="heading-tertiary u-margin-bottom-small">Outdoor</h3>
+                    <p class="paragraph">We zijn voor binnensporten nog gesloten maar bieden zowel fitness als groepslessen buiten aan. Bekijk ons lesrooster voor het actuele aanbod.</p>
+                    <div class="btn btn--blue">Lees meer</div>
                 </div>
                 <div class="col-2-of-2">
-                    <div class="image-box image-box--about"></div>
+                    <div class="composition">
+                        <img src="img/deadlift.jpg" alt="" class="composition__photo composition__photo--1">
+                        <img src="img/dumbell.jpg" alt="" class="composition__photo composition__photo--2">
+                        <img src="img/loopband.jpg" alt="" class="composition__photo composition__photo--3">
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,25 +67,27 @@
        
     <section class="features">
         <div class="row">
-            <div class="feature-box">
-                <img class="feature-box__icon" src="img/icons8-dumbbell-48.png" alt="">
-                <h3 class="heading-tertiary u-margin-bottom-small">Onbeperkt sporten</h3>
-                <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, maxime.</p>
+            <div class=" col-1-of-4 feature-box">
+                <i class="feature-box__icon fas fa-hands-helping fa-3x"></i>
+                <h3 class="heading-tertiary u-margin-bottom-small">Persoonlijke begeleiding</h3>
+                <p class="feature-box__text">Wij zorgen ervoor dat jij altijd persoonlijke sportbegeleiding krijgt.</p>
             </div>
-            <div class="feature-box">
-                <img class="feature-box__icon" src="img/icons8-dumbbell-48.png" alt="">
+            <div class="col-2-of-4 feature-box">
+                <i class="feature-box__icon fas fa-heart fa-3x"></i>
+
                 <h3 class="heading-tertiary u-margin-bottom-small">Onbeperkt sporten</h3>
-                <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, maxime.</p>
+                <p class="feature-box__text">Geniet van onbeperkt sporten met het plus abonnoment</p>
             </div>
-            <div class="feature-box">
-                <img class="feature-box__icon" src="img/icons8-dumbbell-48.png" alt="">
-                <h3 class="heading-tertiary u-margin-bottom-small">Onbeperkt sporten</h3>
-                <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, maxime.</p>
+            <div class="col-3-of-4 feature-box">
+                <i class="feature-box__icon fas fa-running fa-3x"></i>
+
+                <h3 class="heading-tertiary u-margin-bottom-small">Groeps cardio</h3>
+                <p class="feature-box__text">Doe mee met ons dagelijke groepslessen. Samen doen wij een zware cardio training.</p>
             </div>
-            <div class="feature-box">
-                <img class="feature-box__icon" src="img/icons8-dumbbell-48.png" alt="">
-                <h3 class="heading-tertiary u-margin-bottom-small">Onbeperkt sporten</h3>
-                <p class="feature-box__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, maxime.</p>
+            <div class="col-2-of-4 feature-box">
+                <i class="feature-box__icon fas fa-apple-alt fa-3x"></i>
+                <h3 class="heading-tertiary u-margin-bottom-small">Voedings advies</h3>
+                <p class="feature-box__text">Tot slot krijg jij toegang tot gratis voedinsadvies van onze sportinstructeurs</p>
             </div>
         </div>
     </section>
@@ -83,14 +108,21 @@
                             </h4>
                             <div class="card__details">
                                 <ul>
-                                    <li>voor 1 persoon</li>
+                                    <li>Voor 1 persoon</li>
                                     <li>3 keer per week sporten</li>
                                     <li>Persoonlijke begelijding</li>
-                                    <li>nuts</li>
+                                    <li>Koffie en thee</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="card__side card__side--back card__side--back-1">back</div>
+                        <div class="card__side card__side--back card__side--back-1">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Slechts</p>
+                                    <p class="card__price-value">19,- p/m</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-2-of-3">
@@ -104,14 +136,21 @@
                             </h4>
                             <div class="card__details">
                                 <ul>
-                                    <li>voor 1 persoon</li>
-                                    <li>3 keer per week sporten</li>
+                                    <li>Voor 1 persoon</li>
+                                    <li>Onbeperkt sporten</li>
                                     <li>Persoonlijke begelijding</li>
-                                    <li>nuts</li>
+                                    <li>Koffie en thee</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="card__side card__side--back card__side--back-2"></div>
+                        <div class="card__side card__side--back card__side--back-2">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Slechts</p>
+                                    <p class="card__price-value">25,- p/m</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-3-of-3">
@@ -125,14 +164,21 @@
                             </h4>
                             <div class="card__details">
                                 <ul>
-                                    <li>voor 1 persoon</li>
-                                    <li>3 keer per week sporten</li>
+                                    <li>Voor het hele gezin!</li>
+                                    <li>Onbeperkt sporten</li>
                                     <li>Persoonlijke begelijding</li>
-                                    <li>nuts</li>
+                                    <li>Koffie en thee</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="card__side card__side--back card__side--back-3">back</div>
+                        <div class="card__side card__side--back card__side--back-3">
+                            <div class="card__cta">
+                                <div class="card__price-box">
+                                    <p class="card__price-only">Slechts</p>
+                                    <p class="card__price-value">32,- p/m</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -143,9 +189,9 @@
         <div class="row">
             <div class="book">
                 <div class="book__form">
-                    <div class="u-center-text">
-                        <h2 class="heading-secondary u-margin-bottom-small">Abonneer</h2>
-                    </div>
+                    
+                        <h2 class="heading-tertiary u-margin-bottom-small">Word lid!</h2>
+                  
                     <form class="form">
                         <div class="form__group">
                             <input type="text" class="form__input" id="name" placeholder="Full name" required>

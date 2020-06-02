@@ -3,8 +3,8 @@ body{
     font-family: 'Lato', serif;
     line-height: 1.7;
     color: $color-grey-dark;
-    padding: 20px;
     line-height: 1.7;
+    
 }   
 
 
@@ -14,10 +14,13 @@ body{
     &--main{
         display: block;
         font-size: 6rem;
-        letter-spacing: 5px;
+        letter-spacing: 0.5rem;
         animation: movInLeft 1s ease-out ;
         backface-visibility: hidden;
         color: $color-white;
+        @include respond(phone){
+            font-family: 5rem;
+        }
     }
     &--sub{
         display: block;
@@ -25,7 +28,11 @@ body{
         font-size: 3rem;
         animation: movInRight 1s ease-out ;
         margin-bottom: 10px ;
-    
+
+      @include respond(phone){
+            font-family: .5rem;
+
+        }
     }
 }
 
@@ -35,9 +42,21 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
     transition: all .2s;
+    background-image: linear-gradient(to right, $color-red-dark, $color-grey-dark-2);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     &:hover{
         transform: skewX(2deg) skewX(15deg) scale(1.1);
         text-shadow: .5rem 1rem 2rem;
+    }
+    @include respond(tab-port){
+            font-size: 2.5rem;
+            
+    }
+    @include respond(phone){
+            font-size: 2rem;
+
     }
 }
 
